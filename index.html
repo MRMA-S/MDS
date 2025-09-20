@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDS Interface</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Mood Detection System</h1>
+        <p>Real-Time Monitoring</p>
+    </header>
+    <main>
+        <section class="mood-status">
+            <div class="result-card">
+                <h4 class="result-title">Mood</h4>
+                <img id="mood-emoji" class="result-img" src="neutral.png" alt="Mood">
+                <h1 id="mood-value" class="result-Value">Stable</h1>
+                </div>
+            </div>
+        </section>
+        <section class="parameters-grid">
+            <div class="parameter-card">
+                <h4 class="parameter-title">Temperature</h4>
+                <h6 id="Temperature-level" class="parameter-level">Normal</h6>
+                <img class="parameter-img" src="temperature.png" alt="Temperature">
+                <h1 id="Temperature-value" class="parameter-Value">32<span> C°</span></h1>
+                <div class="range-container">
+                    <div class="range-limit">
+                        <p>Max</p>
+                        <span>37.2 C°</span>
+                    </div>
+                    <div class="range-limit">
+                        <p>Min</p>
+                        <span>36.1 C°</span>
+                    </div>
+                </div>
+            </div>
+            <div class="parameter-card">
+                <h4 class="parameter-title">Heart Rate</h4>
+                <h6 id="hr-level" class="parameter-level">Normal</h6>
+                <img class="parameter-img" src="blood-pressure.png" alt="HR">
+                <h1 id="hr-value" class="parameter-Value">80<span> BPM</span></h1>
+                <div class="range-container">
+                    <div class="range-limit">
+                        <p>Max</p>
+                        <span>100 BPM</span>
+                    </div>
+                    <div class="range-limit">
+                        <p>Min</p>
+                        <span>60 BPM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="parameter-card">
+                <h4 class="parameter-title">HR Variability</h4>
+                <h6 id="hrv-level" class="parameter-level">Normal</h6>
+                <img class="parameter-img" src="heartbeat.png" alt="HRV">
+                <h1 id="hrv-value" class="parameter-Value">45<span> ms</span></h1>
+                <div class="range-container">
+                    <div class="range-limit">
+                        <p>Max</p>
+                        <span>70 ms</span>
+                    </div>
+                    <div class="range-limit">
+                        <p>Min</p>
+                        <span>20 ms</span>
+                    </div>
+                </div>
+            </div>
+            <div class="parameter-card">
+                <h4 class="parameter-title">SpO2</h4>
+                <h6 id="spo2-level" class="parameter-level">Normal</h6>
+                <img class="parameter-img" src="oxygen-tank.png" alt="SpO2">
+                <h1 id="spo2-value" class="parameter-Value">97.5<span> %</span></h1>
+                <div class="range-container">
+                    <div class="range-limit">
+                        <p>Max</p>
+                        <span>100 %</span>
+                    </div>
+                    <div class="range-limit">
+                        <p>Min</p>
+                        <span>95 %</span>
+                    </div>
+                </div>
+            </div>
+            <div class="parameter-card">
+                <h4 class="parameter-title">GSR</h4>
+                <h6 id="conductance-level" class="parameter-level">Normal</h6>
+                <img class="parameter-img" src="hand-holding-bolt.png" alt="Conductance">
+                <h1 id="conductance-value" class="parameter-Value">6<span> µS</span></h1>
+                <div class="range-container">
+                    <div class="range-limit">
+                        <p>Max</p>
+                        <span>10 µS</span>
+                    </div>
+                    <div class="range-limit">
+                        <p>Min</p>
+                        <span>2 µS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 MDS - All Rights Reserved</p>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>

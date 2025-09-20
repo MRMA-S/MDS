@@ -1,0 +1,183 @@
+/* إعادة تعيين التنسيقات الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* إعدادات عامة */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* الهيدر */
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(255,255,255,0.06);
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+    font-family: 'Poppins',sans-serif;
+    color: #fcfcfc;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fcfcfc;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #b3b3b3;
+}
+
+/* المحتوى الرئيسي */
+main {
+    display: flex;
+    flex: 1 0 auto;
+    /* flex: 1; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+/* قسم الحالة المزاجية */
+.mood-status {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2rem; /* زيادة المسافة بين الكروت */
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+/* بطاقة النتيجة */
+.result-card{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* width: 300px; */
+    gap: 1rem;
+    padding: 2rem 4rem;
+    background-color: rgba(255,255,255,0.06);
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    font-family: 'Poppins',sans-serif;
+    color: #fcfcfc;
+}
+.result-card .result-title{
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+.result-card .result-img{
+    width: 40%;
+}
+.result-card .result-Value{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+/* الشبكة الرئيسية */
+.parameters-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+
+/* بطاقات القياسات */
+.parameter-card{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 20rem;
+    gap: 1.2rem;
+    padding: 2rem 4rem;
+    background-color: rgba(255,255,255,0.06);
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    font-family: 'Poppins',sans-serif;
+    color: #fcfcfc;
+}
+.parameter-card .parameter-title{
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+.parameter-card .parameter-level{
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+.parameter-card .parameter-img{
+    width: 50%;
+}
+.parameter-card .parameter-Value{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+}
+.parameter-card .parameter-Value span {
+    font-size: 20px;
+    color: #b3b3b3;
+}
+.parameter-card .range-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.parameter-card .range-limit{
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 0px 0px 0px 25px;
+}
+.parameter-card .range-limit span{
+    color: #b3b3b3;
+}
+.parameter-card .range-limit:first-child{
+    border-right: 1px solid #fcfcfc;
+    padding: 0px 25px 0px 0px;
+}
+
+/* الفوتر */
+footer {
+    /* flex-shrink: 0; */
+    padding: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: rgba(255,255,255,0.06);
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+    font-family: 'Poppins',sans-serif;
+    color: #b3b3b3;
+}
