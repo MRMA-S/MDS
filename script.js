@@ -228,7 +228,7 @@ function updateMoodResult(stressValue) {
     moodValueElement.textContent = moodStatus.text;
 
     // تحديث الأيقونة
-    moodEmojiElement.src = `/${moodStatus.emoji}`;
+    moodEmojiElement.src = `/Indicators/${moodStatus.emoji}`;
     moodEmojiElement.alt = moodStatus.text;
 }
 
